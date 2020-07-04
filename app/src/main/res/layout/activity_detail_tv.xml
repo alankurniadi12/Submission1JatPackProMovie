@@ -84,24 +84,6 @@
                     android:layout_toEndOf="@+id/img_duration"
                     tools:text="2h 15m" />
 
-                <!--<ImageView
-                    android:id="@+id/img_release"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/img_duration"
-                    android:layout_marginTop="8dp"
-                    android:src="@drawable/ic_baseline_date_range_24"
-                    tools:ignore="ContentDescription"/>
-
-                <TextView
-                    android:id="@+id/tv_release_detail_tv"
-                    style="@style/TextContent"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/img_release"
-                    android:layout_marginStart="4dp"
-                    android:layout_toEndOf="@+id/img_release"
-                    tools:text="Sep 15, 2019" />-->
 
                 <ImageView
                     android:id="@+id/img_start"
