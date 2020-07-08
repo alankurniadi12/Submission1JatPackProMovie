@@ -38,7 +38,6 @@ class HomeActivityTest {
         onView(withId(R.id.detail_movie)).check(matches(isDisplayed()))
         onView(withId(R.id.detail_movie)).perform(swipeUp())
 
-
         //Apakah data berhasil ditampilkan di detail?
         onView(withId(R.id.img_poster)).check(matches(isDisplayed()))
         onView(withId(R.id.tv_duration_detail_movie)).check(matches(isDisplayed()))
@@ -63,17 +62,12 @@ class HomeActivityTest {
 
     @Test
     fun loadDetailTvShow() {
-        val btnPlayPosition =
         //Tampilkan listTvShow dan scroll semua list
         onView(withText("TvShow")).perform(click())
         onView(withId(R.id.rv_tvshow)).check(matches(isDisplayed()))
 
         //Klikk button didalam item RecyclerView
-        //onView(withId(R.id.rv_tvshow)).check(matches(withId(R.id.btn_play_tv))).perform(click())
-        //onView(withText("Arrow")).check(matches(withId(R.id.btn_play_tv))).perform(click())
-        //onView(withId(R.id.btn_play_tv)).perform(RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(0, click()))
-        //onView(withId(R.id.btn_play_tv)).check(matches(RecyclerViewActions.actionOnHolderItem(dataDummyTv[0].))).perform(click())
-        //onView(withId(R.id.rv_tvshow)).perform(RecyclerViewActions.actionOnItem<RecyclerView.ViewHolder>(withId(R.id.btn_play_tv), click()))
+        onView(withId(R.id.rv_tvshow)).perform(RecyclerViewActions.actionOnItemAtPosition<RecyclerView.ViewHolder>(0, MyCustomeViewAction.MyViewAction.clickChildViewWithId()))
 
         //swipup detail
         onView(withId(R.id.detail_tvshow)).check(matches(isDisplayed()))
@@ -89,6 +83,5 @@ class HomeActivityTest {
 
         //swipdown detail
         onView(withId(R.id.detail_tvshow)).perform(swipeDown())
-
     }
 }

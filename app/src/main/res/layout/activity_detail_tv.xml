@@ -90,7 +90,7 @@
                     android:layout_alignTop="@+id/img_start"
                     android:layout_marginStart="4dp"
                     android:layout_toEndOf="@id/img_start"
-                    tools:text="80" />
+                    android:text="@string/score_tv" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 

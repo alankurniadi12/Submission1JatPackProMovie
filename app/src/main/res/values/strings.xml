@@ -1,16 +1,23 @@
 <resources>
     <string name="app_name">Sub1 Movie JatPackPro</string>
 
-    <string name="title_movie">Title Movie</string>
-    <string name="item_movie_release">June 01, 2020</string>
-    <string name="duration_movie">1h 59m</string>
-
-    <string name="title_tvshow">Title TvShow</string>
-    <string name="duration_tv_show">42m</string>
-    <string name="tab_movie">Movie</string>
-    <string name="tab_tvshow">TvShow</string>
     <string name="loremipsum">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
     <string name="overview_detail">Overview:</string>
     <string name="cd_image_poster">Image Poster</string>
+
+    //MOVIE
+    <string name="tab_movie">Movie</string>
+    <string name="title_movie">Title Movie</string>
+    <string name="item_movie_release">June 01, 2020</string>
+    <string name="duration_movie">1h 59m</string>
+    <string name="score_movie">100</string>
+
+    //TVSHOW
+    <string name="tab_tvshow">TvShow</string>
+    <string name="title_tvshow">Title TvShow</string>
     <string name="play_button">Play</string>
+    <string name="duration">Duration:</string>
+    <string name="duration_tv_show">42m</string>
+    <string name="score_tv">80</string>
+
 </resources>
