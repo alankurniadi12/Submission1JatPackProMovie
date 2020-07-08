@@ -41,6 +41,7 @@ class TvShowAdapter: RecyclerView.Adapter<TvShowAdapter.TvViewModel>() {
                     .apply(RequestOptions.placeholderOf(R.drawable.ic_loading))
                     .error(R.drawable.ic_error)
                     .into(img_item_tv_show)
+
                 btn_play_tv.setOnClickListener {
                     val intent = Intent(itemView.context, DetailTvActivity::class.java)
                     intent.putExtra(DetailTvActivity.EXTRA_TV, tvShow.id)

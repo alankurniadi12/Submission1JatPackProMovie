@@ -76,7 +76,7 @@
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/bg_button"
-            android:text="Play"
+            android:text="@string/play_button"
             android:textColor="@color/colorTextTertiary"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

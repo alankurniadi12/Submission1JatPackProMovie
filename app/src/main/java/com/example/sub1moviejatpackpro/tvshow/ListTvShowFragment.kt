@@ -38,19 +38,5 @@ class ListTvShowFragment : Fragment() {
                 adapter = tvShowAdapter
             }
         }
-
-        //btn_play_tv.setOnClickListener(this)
     }
-
-
-    /*override fun onClick(v: View) {
-        when(v.id){
-            R.id.btn_play_tv -> {
-                val intent = Intent(context, DetailTvActivity::class.java)
-                intent.putExtra(DetailTvActivity.EXTRA_TV, tvShow?.id)
-                startActivity(intent)
-            }
-        }
-    }*/
-
 }
