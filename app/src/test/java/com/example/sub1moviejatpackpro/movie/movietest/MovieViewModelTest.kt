@@ -22,6 +22,7 @@ class MovieViewModelTest {
         viewModel.setSelectedDetail(dummyId)
         val dataDetailMovie = viewModel.getDetailMovies()
         assertNotNull(dataDetailMovie)              //apakah datadetail null?
+
         //apakah data yang tampil sesuai dengan Id hasil intent klik listitem?
         assertNotNull(dummyId, dataDetailMovie?.id)
         assertNotNull(dataDummy.poster.toString(), dataDetailMovie?.poster)
@@ -36,6 +37,6 @@ class MovieViewModelTest {
     fun getMovies() {
         val dataMovie = viewModel.getMovies()
         assertNotNull(dataMovie)                            //apakah dataMovie yang didapatkan dari datadummy null?
-        assertEquals(10, dataMovie.size)            //apakah list data berjumlah 10 item?
+        assertEquals(10, dataMovie.size)           //apakah list data berjumlah 10 item?
     }
 }
